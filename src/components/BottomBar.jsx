@@ -1,7 +1,36 @@
 import React from 'react'
 
+import '../css/BottomBar.css'
+
 export const BottomBar = () => {
   return (
-    <div>BottomBar</div>
+    <>
+      <div className="bottom">
+
+        <div className="bottom-btn">
+          <p className="bg-circle-white"> A</p>
+          <p>See Derails</p>
+        </div>
+        <div className="bottom-btn">
+          <p className="bg-circle-white">X</p>
+          <p>Habitat</p>
+        </div>
+        <div className="bottom-btn">
+          <p className="bg-circle-white">Y</p>
+          <p>Sort</p>
+        </div>
+        <div className="bottom-btn">
+          <p className="bg-circle-white">+</p>
+          <p>See Evaluation</p>
+        </div>
+        <div className="bottom-btn">
+          <p className="bg-circle-white">B</p>
+          <p>Back</p>
+        </div>
+
+
+
+      </div>
+    </>
   )
 }
