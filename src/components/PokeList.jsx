@@ -44,7 +44,16 @@ export const PokeList = () => {
           <div className="all-container">
           {
             allPokemons.map((pokemonData) =>(
-              <PokemonCard key={ pokemonData.id } id={ pokemonData.id.toString() }/>             
+              // padStart(3,"0") rellana con los caracteres que se le pase
+              <PokemonCard key={ pokemonData.id } 
+                           id={ pokemonData.id.toString().padStart(3,"0") }
+                           names = {pokemonData.name }
+                           image = {pokemonData.sprites.other["official-artwork"].front_default}
+                           type = {pokemonData.types[0].type.name}
+                           width = { pokemonData.weight }
+                           height = { pokemonData.height }
+                           
+                           />             
             ))
           }
           </div>

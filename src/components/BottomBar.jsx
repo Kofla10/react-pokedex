@@ -15,7 +15,7 @@ export const BottomBar = () => {
           <p className="bg-circle-white">X</p>
           <p>Habitat</p>
         </div>
-        <div className="bottom-btn">
+        {/* <div className="bottom-btn">
           <p className="bg-circle-white">Y</p>
           <p>Sort</p>
         </div>
@@ -26,7 +26,7 @@ export const BottomBar = () => {
         <div className="bottom-btn">
           <p className="bg-circle-white">B</p>
           <p>Back</p>
-        </div>
+        </div> */}
 
 
 
