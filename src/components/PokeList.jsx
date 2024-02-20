@@ -10,14 +10,14 @@ export const PokeList = () => {
 
   const getAllPokemons = async () =>{
 
-    const resp = await fetch("https://pokeapi.co/api/v2/pokemon?limit=10&offset=0");
+    const resp = await fetch("https://pokeapi.co/api/v2/pokemon?limit=12&offset=0");
 
     const data = await resp.json();
 
     const createPokemonObject = async (results) =>{
 
       results.forEach(async (pokemon) => {
-        console.log(`https://pokeapi.co/api/v2/pokemon/${ pokemon.name }`)
+
         const res = await fetch(
           `https://pokeapi.co/api/v2/pokemon/${ pokemon.name }`
         )
