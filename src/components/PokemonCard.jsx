@@ -1,10 +1,11 @@
 import React from 'react'
 
 import '../css/PokemonCard.css'
+import pokeball from '../img/pokeball.png'
 
 
 
-const PokemonCard = ({names, id, image, type}) => {
+const PokemonCard = ({id, names, image, type, width, height, stats, statsName}) => {
   return (
     <>
         <div className="container">
@@ -13,6 +14,13 @@ const PokemonCard = ({names, id, image, type}) => {
             <p>{names}</p>
             <img src={image} alt="" />
             </div>
+          </div>
+
+          <div className='right'>
+            <img src={image} alt={ names } style={ {maxHeight: "50px", marginRight: "10px", width: "50px"} }/>
+            <p style={{width :"270px" }}> No. {id} </p>
+            <p>{names}</p>
+            <img src={ pokeball } alt="pokeball" style={{marginLeft: "auto", width: "40px"}} />
           </div>
         </div>
     </>
